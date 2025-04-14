@@ -1,0 +1,20 @@
+- bot_reply: 你現在打算怎麼做？
+  stage: 進入情境
+  tag: 進入事件、情緒識別
+  user_input: 我剛看到一位同學被推倒了...
+- bot_reply: 你做得很好，關心與行動都很重要。
+  stage: 分支選項 A
+  tag: 主動反應、同理傾向
+  user_input: 馬上幫助他
+- bot_reply: 你選擇了請求大人的支援，這是安全且明智的行動。
+  stage: 分支選項 B
+  tag: 間接協助、求助傾向
+  user_input: 找老師幫忙
+- bot_reply: 我們理解你可能不知如何應對，我們可以一起練習應變方法。
+  stage: 分支選項 C
+  tag: 逃避傾向、情緒壓抑
+  user_input: 假裝沒看到
+- bot_reply: 你能描述一下當下的感受與下一步想法嗎？
+  stage: 反思提示
+  tag: 反思能力、情緒表達
+  user_input: 你覺得這樣的選擇會帶來什麼後果？

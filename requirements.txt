@@ -1,3 +1,0 @@
-flask
-pyyaml
-line-bot-sdk==3.*

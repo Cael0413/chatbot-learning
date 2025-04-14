@@ -8,8 +8,12 @@ import yaml
 
 app = Flask(__name__)
 
-LINE_CHANNEL_ACCESS_TOKEN = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", "YOUR_LINE_TOKEN")
-LINE_CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET", "YOUR_LINE_SECRET")
+LINE_CHANNEL_ACCESS_TOKEN = os.getenv("LINE_CHANNEL_ACCESS_TOKEN")
+LINE_CHANNEL_SECRET = os.getenv("LINE_CHANNEL_SECRET")
+
+# 🔍 印出 token（前 10 碼）
+print("🔍 ACCESS_TOKEN starts with:", LINE_CHANNEL_ACCESS_TOKEN[:10])
+print("🔍 SECRET starts with:", LINE_CHANNEL_SECRET[:10])
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
